@@ -10,7 +10,7 @@
 		F5251C1528D8EE8200FECB90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251C1428D8EE8200FECB90 /* AppDelegate.swift */; };
 		F5251C1728D8EE8200FECB90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251C1628D8EE8200FECB90 /* ViewController.swift */; };
 		F5251C1928D8EE8300FECB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5251C1828D8EE8300FECB90 /* Assets.xcassets */; };
-		F5251C1C28D8EE8300FECB90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5251C1A28D8EE8300FECB90 /* Main.storyboard */; };
+		F5251C2428D8F14800FECB90 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251C2328D8F14800FECB90 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +18,8 @@
 		F5251C1428D8EE8200FECB90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5251C1628D8EE8200FECB90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5251C1828D8EE8300FECB90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F5251C1B28D8EE8300FECB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5251C1D28D8EE8300FECB90 /* TweekChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TweekChecker.entitlements; sourceTree = "<group>"; };
+		F5251C2328D8F14800FECB90 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 				F5251C1428D8EE8200FECB90 /* AppDelegate.swift */,
 				F5251C1628D8EE8200FECB90 /* ViewController.swift */,
 				F5251C1828D8EE8300FECB90 /* Assets.xcassets */,
-				F5251C1A28D8EE8300FECB90 /* Main.storyboard */,
 				F5251C1D28D8EE8300FECB90 /* TweekChecker.entitlements */,
+				F5251C2328D8F14800FECB90 /* main.swift */,
 			);
 			path = TweekChecker;
 			sourceTree = "<group>";
@@ -120,7 +120,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5251C1928D8EE8300FECB90 /* Assets.xcassets in Resources */,
-				F5251C1C28D8EE8300FECB90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,21 +132,11 @@
 			files = (
 				F5251C1728D8EE8200FECB90 /* ViewController.swift in Sources */,
 				F5251C1528D8EE8200FECB90 /* AppDelegate.swift in Sources */,
+				F5251C2428D8F14800FECB90 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F5251C1A28D8EE8300FECB90 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5251C1B28D8EE8300FECB90 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F5251C1E28D8EE8300FECB90 /* Debug */ = {
@@ -275,8 +264,10 @@
 				DEVELOPMENT_TEAM = WX4E294MK6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TweekChecker/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,8 +293,10 @@
 				DEVELOPMENT_TEAM = WX4E294MK6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TweekChecker/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
