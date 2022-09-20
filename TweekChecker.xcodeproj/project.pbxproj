@@ -12,6 +12,7 @@
 		F5251C1928D8EE8300FECB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5251C1828D8EE8300FECB90 /* Assets.xcassets */; };
 		F5251C2428D8F14800FECB90 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251C2328D8F14800FECB90 /* main.swift */; };
 		F5251C2728D8F79400FECB90 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5251C2628D8F79400FECB90 /* Info.plist */; };
+		F591FC8728DA46730000E419 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F591FC8528DA462F0000E419 /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F5251C1D28D8EE8300FECB90 /* TweekChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TweekChecker.entitlements; sourceTree = "<group>"; };
 		F5251C2328D8F14800FECB90 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F5251C2628D8F79400FECB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F591FC8528DA462F0000E419 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F591FC8728DA46730000E419 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				F5251C1328D8EE8200FECB90 /* TweekChecker */,
 				F5251C1228D8EE8200FECB90 /* Products */,
+				F591FC8428DA462F0000E419 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				F5251C2628D8F79400FECB90 /* Info.plist */,
 			);
 			path = TweekChecker;
+			sourceTree = "<group>";
+		};
+		F591FC8428DA462F0000E419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F591FC8528DA462F0000E419 /* AppKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -10,6 +10,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     private var statusItem: NSStatusItem!
+    private var popOver: NSPopover!
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -17,9 +18,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if let statusButton = statusItem.button {
             statusButton.image = NSImage(systemSymbolName: "pawprint.circle", accessibilityDescription: "Paw")
+            statusButton.action = #selector(togglePopover)
         }
         
-        setupMenus()
+        self.popOver = NSPopover()
+        self.popOver.contentSize = NSSize(width: 400, height: 400)
+        self.popOver.behavior = .transient
+        self.popOver.contentViewController = ViewController()
+        
+        //setupMenus()
+    }
+    
+    @objc func togglePopover() {
+        if let button = statusItem.button {
+            if popOver.isShown {
+                self.popOver.performClose(nil)
+            } else {
+                self.popOver.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+            }
+        }
     }
     
     func setupMenus() {
